@@ -174,7 +174,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Matteo Teodori**
+**Matteo Oldani**
 
 - GitHub: [@TeOld74](https://github.com/TeOld74)
 - Project Link: [https://github.com/TeOld74/TyMos-Clock](https://github.com/TeOld74/TyMos-Clock)
