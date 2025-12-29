@@ -1,0 +1,32 @@
+# TyMos-Clock .gitignore
+
+# Personal configuration files (must be configured locally)
+secrets.h
+config_local.h
+calibration_personal.h
+
+# Arduino/ESP32 build files
+*.elf
+*.bin
+*.hex
+*.map
+build/
+*.o
+*.a
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+
+# Personal notes
+notes_personal.md
+TODO_personal.md
