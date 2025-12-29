@@ -2,10 +2,6 @@
 
 A unique mechatronic clock featuring 29 servo motors controlled by ESP32, creating an engaging and artistic way to display time.
 
-## 📷 Photos
-
-*Coming soon - project photos and videos will be added here*
-
 ## ✨ Features
 
 - **29 Servo Motors**: Each motor contributes to the mechanical display of time
@@ -15,7 +11,7 @@ A unique mechatronic clock featuring 29 servo motors controlled by ESP32, creati
 - **RTC Backup**: DS3231 Real-Time Clock maintains time even without WiFi
 - **Web Interface** *(Phase 1)*: Browser-based control and configuration
 - **Dual PWM Drivers**: Two PCA9685 boards provide precise 16-bit PWM control
-- **Professional 5V Power Supply**: Stable power for all servo motors
+- **Standard 5V Power Supply**: Minimum 3A power supply for stable operation
 
 ## 🔧 Hardware Requirements
 
@@ -23,14 +19,14 @@ A unique mechatronic clock featuring 29 servo motors controlled by ESP32, creati
 - **2x PCA9685 16-Channel PWM Driver Boards** (I2C controlled)
 - **DS3231 Real-Time Clock Module** (I2C with battery backup)
 - **29x Servo Motors** (SG90 or similar 5V micro servos)
-- **5V 20A Power Supply** (to power all servos simultaneously)
+- **5V Power Supply** (minimum 3A recommended)
 - **Connecting wires and breadboard/PCB**
 
 ### Wiring Overview
 
 - **I2C Bus**: ESP32 SDA/SCL connected to both PCA9685 boards and DS3231
 - **PWM Drivers**: Each PCA9685 controls up to 16 servos (29 servos total)
-- **Power**: Separate 5V power supply for servos, ESP32 powered via USB or regulated 5V
+- **Power**: Single 5V power supply split into separate rails for servos and ESP32
 
 *Detailed schematics will be available in the `hardware/schematics/` directory*
 
@@ -123,8 +119,6 @@ nano secrets.h  # or use your preferred editor
 - **Web Configurator**: First-time setup wizard accessible via WiFi hotspot (no code editing needed)
 - **Animation Modes**: Creative movement patterns and transitions
 - **Alarm Function**: Wake-up animations and notifications
-- **API Integration**: Weather, calendar, or custom data display
-- **Mobile App**: Native iOS/Android control application
 
 ## 📁 Project Structure
 
